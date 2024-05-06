@@ -1,0 +1,445 @@
+/* Setting the background of the website */
+    body {
+        font-family: Bitter;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 50px;
+    }
+    p{
+        text-align: justify;
+        font-family: Bitter;
+    }
+    .footer_p{
+        text-align: center;
+        color: rgb(101,5,97);
+    }
+
+    .background {
+        background-color: plum;
+        width: 100%;
+        height: 100%;
+    }
+/*end of background */
+
+/* nav bar/ content finder */
+    .bar{
+        display: none;
+    }
+    nav {
+        background-color: white;
+        padding: 8px;
+        text-align: center;
+        position: relative;
+    }
+
+    nav li {
+        display: inline;
+        color: rgb(101,5,97);
+        font-family: Bitter;
+        font-weight: bold;
+        margin-right: 20px;
+        font-size: 20px;
+        padding: 2%;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: rgb(101,5,97);
+    }
+/*end of nav bar content */
+
+/* First div with hello kitty symbol */
+.content, .content_img{
+    background-color: white;
+    color: rgb(101,5,97);
+    font-weight: normal;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid plum;
+    margin: 10px;
+}
+
+.content_img{
+    height: 80%;
+}
+
+.hello-kitty{
+    height: 5em;
+    float: left;
+}
+/*end of that portion*/
+
+/* hover image bar */
+.box {
+    width: 95%;
+    padding: 5px;
+    display: flex;
+    background: white;
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+}
+
+section {
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.item {
+    height: 380px;
+    padding: 10px;
+    border: 1px solid white;
+    flex: 1;
+    transition: 1.5s all ease;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.item1 {
+    background-image: url('front_end.png');
+}
+
+.item2 {
+    background-image: url('java.png');
+}
+
+.item3 {
+    background-image: url('python.png');
+}
+
+.item4 {
+    background-image: url('scripting.png');
+}
+
+.item:hover {
+    flex: 10;
+    position: relative;
+}
+
+.item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(221, 160, 221, 0.7);
+    z-index: 0;
+}
+.item .text {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    z-index: 2;
+    color: transparent;
+    transition: color 0.5s ease;
+}
+.item:hover .text {
+    color: white;
+    font-size: 200%;
+}
+/* end of that portion */
+
+/* About Me portion*/
+.img_1{
+    width: 90%;
+}
+.resume{
+    text-decoration: none;
+    color: rgb(101,5,97);
+}
+.resume:hover{
+    text-decoration: underline;
+    color: rgb(101,5,97);
+}
+/*Over with the about me */
+
+/* Projects portion*/
+.project_text {
+    text-align: center;
+}
+.projectsLinks {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.front_end, .java, .python {
+    background-color: rgba(221, 160, 221, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project-button {
+    text-align: center;
+    padding: 50px;
+}
+
+.project-btn {
+    background-color: plum;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.project-btn:hover {
+    background-color: rgba(221, 160, 221, 0.5);
+}
+/*Over with it */
+
+/* Contact Me portion */
+
+.linkedin{
+    text-decoration: none;
+    font-family: Bitter;
+    color: rgb(101,5,97);
+}
+.linkedin:hover{
+    text-decoration: underline;
+}
+
+/* End of Contact Me portion */
+
+/* Footer */
+footer {
+    background-color: white;
+    color: plum;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* end of footer */
+
+/* Making it responsible for each screen size */
+
+@media screen and (max-width: 1150px) {
+
+    /* nav bar/ content finder */
+    nav {
+        padding: 2px;
+    }
+
+    nav li {
+        font-size: 18px;
+        padding: 1%;
+    }
+
+    /*end of nav bar content */
+    /* First div with hello kitty symbol */
+    .content, .content_img {
+        font-weight: 400;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        width: 90%;
+        margin: auto;
+    }
+
+    /*end of that portion*/
+    /* hover image bar */
+    .box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    section {
+        padding: 30px;
+        text-align: center;
+        color: white;
+    }
+
+    .item {
+        height: 300px;
+        padding: 10px;
+    }
+
+    .item:active {
+        flex: 10;
+        position: relative;
+    }
+
+    .item:active .text {
+        font-weight: bold;
+    }
+
+    /* end of that portion */
+    /* About Me portion*/
+    .img_1 {
+        width: 70%;
+    }
+
+    .aboutMe {
+        margin: 30px;
+    }
+
+    /*Over with the about me */
+    /* Projects portion*/
+    .projectsLinks {
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .front_end, .java, .python {
+        padding: 10px;
+        margin: 10px;
+    }
+    .project-button {
+        padding: 40px;
+    }
+
+    .project-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+        transition: background-color 0.1s ease;
+    }
+
+    .project-btn:active {
+        background-color: rgba(221, 160, 221, 0.5);
+    }
+
+    /*Over with it */
+}
+
+@media screen and (max-width: 900px) {
+
+    /* nav bar/ content finder */
+    .bar {
+        display: inline-block;
+        position: fixed;
+        top: 0;
+        left: -20%;
+        height: 100%;
+        width: 20%;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 20px;
+        z-index: 1;
+    }
+
+    .bar:hover {
+        left: 0;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        padding: 20px;
+    }
+
+    .navbar li {
+        margin-bottom: 15px;
+    }
+
+    .navbar a {
+        color: plum;
+        text-decoration: none;
+    }
+
+    .button {
+        position: fixed;
+        border: 2px solid plum;
+        top: 20px;
+        left: 5px;
+        background-color: white;
+        color: plum;
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .bar:hover .button {
+        opacity: 0%;
+    }
+
+    nav {
+        display: none;
+    }
+    /*end of nav bar content */
+
+    /* First div with hello kitty symbol */
+
+    .hello-kitty{
+        display: none;
+    }
+    /*end of that portion*/
+
+    /* Projects portion*/
+    .projectsLinks {
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .front_end, .java, .python {
+        padding: 10px;
+        margin: 10px;
+    }
+    .project-button {
+        padding: 30px;
+    }
+
+    .project-btn {
+        padding: 10px 10px;
+        font-size: 14px;
+        transition: background-color 0.1s ease;
+    }
+
+    .project-btn:active {
+        background-color: rgba(221, 160, 221, 0.5);
+    }
+
+    /*Over with it */
+}
+@media screen and (max-width: 630px) {
+    /* First div with hello kitty symbol */
+    .content, .content_img {
+        font-weight: 400;
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-right: 6px;
+        padding-left: 6px;
+        padding-bottom: 5px;
+    }
+    /*end of that portion*/
+
+    /* Projects portion*/
+    .projectsLinks {
+        display: inline-block;
+    }
+    .front_end, .java, .python {
+        padding: 8px;
+        margin: 8px;
+    }
+    /*Over with it */
+    /* Footer */
+    footer {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 4px;
+    }
+    /* end of footer */
+}
